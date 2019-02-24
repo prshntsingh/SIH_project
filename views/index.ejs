@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Compnay1 Home Page</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+   <% include navigation.ejs %>
+    <h1>Company1 home page</h1>
+
+   <% post.forEach( function ( item ){ %>
+     <a href="viewarticle/<%= item.id %>" title="Post Detail"><%= item.title %></a>
+     <br>
+   <% }) %>
+
+  </body>
+</html>

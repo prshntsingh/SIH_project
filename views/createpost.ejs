@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<% include navigation.ejs %>
+
+<h1><%= title %></h1>
+<form action="/" method="POST">
+    <textarea name="title"></textarea><br>
+    <textarea name="content"></textarea><br>
+    <input type="submit" value="Add Post" />
+</form>
+</body>
+</html>
